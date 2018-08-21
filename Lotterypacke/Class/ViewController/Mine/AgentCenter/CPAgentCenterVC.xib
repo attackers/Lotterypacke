@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CPAgentCenterVC">
+            <connections>
+                <outlet property="_tableView" destination="TJB-CG-Jqw" id="MQF-ls-cNf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="TJB-CG-Jqw">
+                    <rect key="frame" x="0.0" y="171" width="375" height="496"/>
+                    <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="SLo-n6-re9"/>
+                        <outlet property="delegate" destination="-1" id="c3U-x4-BLD"/>
+                    </connections>
+                </tableView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dailiianjieyiqie" translatesAutoresizingMaskIntoConstraints="NO" id="3Qh-tJ-Nj7">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="171"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="3Qh-tJ-Nj7" secondAttribute="height" multiplier="125:57" id="XD6-G1-0d4"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="TJB-CG-Jqw" secondAttribute="bottom" id="80z-wR-rR7"/>
+                <constraint firstAttribute="trailing" secondItem="TJB-CG-Jqw" secondAttribute="trailing" id="EED-Nx-hp5"/>
+                <constraint firstItem="TJB-CG-Jqw" firstAttribute="top" secondItem="3Qh-tJ-Nj7" secondAttribute="bottom" id="NmS-4b-8C7"/>
+                <constraint firstItem="3Qh-tJ-Nj7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZIz-f3-dS7"/>
+                <constraint firstItem="TJB-CG-Jqw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cLQ-xZ-68k"/>
+                <constraint firstAttribute="trailing" secondItem="3Qh-tJ-Nj7" secondAttribute="trailing" id="dQG-Wj-C3A"/>
+                <constraint firstItem="3Qh-tJ-Nj7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xuQ-bY-c9H"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="85.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dailiianjieyiqie" width="375" height="171"/>
+    </resources>
+</document>

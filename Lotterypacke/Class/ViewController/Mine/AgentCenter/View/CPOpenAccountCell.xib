@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CPOpenAccountCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="快乐十分快乐" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvu-Jd-ePQ">
+                        <rect key="frame" x="8" y="0.0" width="95" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="95" id="geF-mW-Ge5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="自身赔率10.0,可设置赔率0.0~10.0" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O99-nT-fuZ">
+                        <rect key="frame" x="110" y="0.0" width="200" height="50"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                        <connections>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="Pse-2c-EAx"/>
+                        </connections>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="O99-nT-fuZ" secondAttribute="trailing" constant="10" id="JF5-OK-33g"/>
+                    <constraint firstItem="O99-nT-fuZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="NGQ-fs-x7V"/>
+                    <constraint firstAttribute="bottom" secondItem="O99-nT-fuZ" secondAttribute="bottom" constant="-0.5" id="OIu-Zg-MqS"/>
+                    <constraint firstItem="bvu-Jd-ePQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="aEL-v5-81S"/>
+                    <constraint firstItem="bvu-Jd-ePQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="inw-Lh-JyO"/>
+                    <constraint firstItem="O99-nT-fuZ" firstAttribute="leading" secondItem="bvu-Jd-ePQ" secondAttribute="trailing" constant="7" id="jrB-Zt-5md"/>
+                    <constraint firstAttribute="bottom" secondItem="bvu-Jd-ePQ" secondAttribute="bottom" constant="-0.5" id="kjE-Zy-lQj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="_desLabel" destination="bvu-Jd-ePQ" id="2GA-La-EQl"/>
+                <outlet property="_textField" destination="O99-nT-fuZ" id="29P-iM-Ppd"/>
+            </connections>
+            <point key="canvasLocation" x="-95" y="154"/>
+        </tableViewCell>
+    </objects>
+</document>
